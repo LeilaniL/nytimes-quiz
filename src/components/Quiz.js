@@ -1,11 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import QuizQuestion from './QuizQuestion';
+import Summary from './Summary';
 
-function Quiz(props) {
-  return(
-    <React.Fragment>
-      <h1>Welcome to News Quiz!</h1>
-    </React.Fragment>
-  )
+class Quiz extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      completed: false,
+      numberCorrect: 0,
+    }
+  }
+
+  render() {
+    const { testQuestions } = this.props;
+    {/* // TODO add unique keys */ }
+    return (
+      <React.Fragment>
+        {testQuestions.map((q) =>
+          (<QuizQuestion questionText={q.questionText} answerText={q.answerText} />)
+        )}
+        {this.state.completed && <Summary />}
+      </React.Fragment>
+    );
+  }
+}
+
+Quiz.propTypes = {
+  testQuestions: PropTypes.array
 }
 
 export default Quiz;
