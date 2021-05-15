@@ -16,7 +16,7 @@ After running these commands, you should be able to see the project at `http://l
 
 
 ### Status/Roadmap
-- [ ] Create basic components
+- [x] Create basic components
 - [ ] Add state as needed
 - [ ] Write tests (Jest? React Testing Library?)
 - [ ] Deploy via Netlify
