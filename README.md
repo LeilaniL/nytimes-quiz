@@ -16,13 +16,13 @@ After running these commands, you should be able to see the project at `http://l
 
 
 ### Status/Roadmap
-[ ] Create basic components
-[ ] Add state as needed
-[ ] Write tests (Jest? React Testing Library?)
-[ ] Deploy via Netlify
-[ ] Refactor to use Redux or Context
-[ ] Use NYTimes API for question data?
-[ ] Add animations for correct answers
+- [ ] Create basic components
+- [ ] Add state as needed
+- [ ] Write tests (Jest? React Testing Library?)
+- [ ] Deploy via Netlify
+- [ ] Refactor to use Redux or Context
+- [ ] Use NYTimes API for question data?
+- [ ] Add animations for correct answers
 
 
 # Getting Started with Create React App
