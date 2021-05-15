@@ -1,3 +1,30 @@
+# Weekly News Quiz App
+A ~~shameless copy~~ homage to the [New York Times News Quiz](https://www.nytimes.com/interactive/2021/05/14/briefing/news-quiz-palestine-israel-pipeline-medina-spirit.html), where you can test your knowledge of news from the week.
+
+### Setup Instructions
+Make sure you have [Node](https://nodejs.org/en/download/) and Yarn package manager installed.
+In your terminal, run these commands:
+```
+$ cd Desktop
+$ git clone https://github.com/LeilaniL/nytimes-quiz.git
+$ cd nytimes-quiz
+$ yarn install
+$ yarn start
+```
+
+After running these commands, you should be able to see the project at `http://localhost:3000` in your browser.
+
+
+### Status/Roadmap
+[ ] Create basic components
+[ ] Add state as needed
+[ ] Write tests (Jest? React Testing Library?)
+[ ] Deploy via Netlify
+[ ] Refactor to use Redux or Context
+[ ] Use NYTimes API for question data?
+[ ] Add animations for correct answers
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
