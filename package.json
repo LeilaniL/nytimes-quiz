@@ -12,6 +12,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -39,13 +41,13 @@
     ]
   },
   "husky": {
-      "hooks": {
-        "pre-commit": "lint-staged"
-      }
-    },
-    "lint-staged": {
-      "src/**/*.{js,jsx,ts,tsx,json,css,scss}": [
-        "prettier --write"
-      ]
-      }
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss}": [
+      "prettier --write"
+    ]
+  }
 }
