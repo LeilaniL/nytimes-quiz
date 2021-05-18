@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
 import QuizQuestion from './QuizQuestion';
 import Summary from './Summary';
 
@@ -18,8 +19,8 @@ class Quiz extends Component {
     return (
       <React.Fragment>
         {testQuestions.map((q) =>
-          (<QuizQuestion questionText={q.questionText} answerText={q.answerText} />)
-        )}
+        (<QuizQuestion key={v4()} questionText={q.questionText} answerText={q.answerText} />
+        ))}
         {this.state.completed && <Summary />}
       </React.Fragment>
     );
